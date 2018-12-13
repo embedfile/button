@@ -3,7 +3,7 @@ var DLBTN = DLBTN || (function(){
     var _settings = {
         hash: '',
         maxWidth: '100%',
-        width: null
+        width: '100%'
     };
     return {
         init : function(Args) {
@@ -25,7 +25,7 @@ var DLBTN = DLBTN || (function(){
             iframe.style.height = '54px';
             iframe.style.border = 0;
             iframe.style.overflow = 'hidden';
-            if( null != _settings.width ) iframe.style.width = _settings.width;
+            iframe.style.width = _settings.width;
             document.write(iframe.outerHTML);
         }
     };
